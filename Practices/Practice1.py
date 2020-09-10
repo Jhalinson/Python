@@ -57,7 +57,10 @@ elif(average<=64):
 
 # 8- Que almacene monto, cantidad de cuotas, y porcentaje de interés anual de un préstamo y
 # calcule la cuota mensual. (Amortizar mediante el sistema francés)
-
+fee_to_pay =int(input())
+amount_of_the_mortgage_loan =int(input())
+interest_rate_for_the_period = int(input())
+number_of_installments =int(input())
 amount = int(input())
 amount_of_fees =int(input())
 annual_interest_percentage =int(input())
