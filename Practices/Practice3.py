@@ -50,12 +50,24 @@ def readList():
     text = input("Write a list separate by comma: ")
     list = text.split(",")
     return list
+def multipleOfSixOfTwoNumbers(x , y):
+  
+    if y < x:
+        print('The first number should be greater than the second')
+    for i in range(x, y):
+        if i%6==0:
+            for r in range(1,14):
+                result  = r * i
+                if r == 13:
+                    print("\n")
+                    break
+                print(i, " X ", r, " = ", result) 
 
-
-print(empowerment())
-numberInLetters()
-print(leap_year())
-print(readTwoNumbers())
-print(palindrome())
-print(validateId(2230043731))
-print(readList())
+multipleOfSixOfTwoNumbers(10, 50)
+# print(empowerment())
+# numberInLetters()
+# print(leap_year())
+# print(readTwoNumbers())
+# print(palindrome())
+# print(validateId(2230043731))
+# print(readList())
