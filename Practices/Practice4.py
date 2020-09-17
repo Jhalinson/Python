@@ -1,5 +1,27 @@
 import this
 
+class House:
+    window = 10
+    door = 5
+    walls = 20
+
+class Person:
+    name = ""
+    last_name= ""
+    id = None
+    eyes = 2
+
+class Vehicle:
+    wheels = 4
+    doors = 7
+    windows = 6
+    
+    
+
+
+
+
+
 
 class Student:
     score = 0
@@ -72,12 +94,32 @@ class Koopa(Character):
 
 
 class Car:
-    fuelQuantity = 0
+    fuelQuantity = 10
+    kilometers = 0
 
+    
+    
     def turnOn(self):
-        pass
+        gasoline = self.fuelQuantity - 1
+        for i in range(0, self.fuelQuantity): 
+            self.kilometers+=3
+            gasoline-=1
+            print("Kilometers: ", self.kilometers)
+            print("Gasoline Avaliable: ", gasoline)
+            if gasoline == -1:
+                print("Gasoline over")
+            
+                
+                
+    def turnOff(self):
+        if self.fuelQuantity == 0: 
+            self.kilometers += 0
+            print("Kilometers: ", self.kilometers)
+            print("The car is Turn Off")
 
+car = Car()
 
+car.turnOn()
 student = Student(100)
 student.scoreValue()
 arithmetic = Arithmetic()
