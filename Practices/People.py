@@ -1,4 +1,6 @@
 from tkinter import Toplevel, Frame, PhotoImage, Label, X, Listbox, Scrollbar, VERTICAL, N, S, Button, messagebox
+
+from Practices.AboutUs import AboutUs
 from Practices.AddPeople import AddPerson
 import sqlite3
 
@@ -92,3 +94,4 @@ class MyContacts(Toplevel):
                 self.destroy()
             except Exception as e:
                 messagebox.showerror("Info", str(e))
+

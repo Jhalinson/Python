@@ -1,4 +1,6 @@
 from tkinter import *
+
+from Practices.AboutUs import AboutUs
 from Practices.People import MyContacts
 import datetime
 from Practices.UpdatePeople import UpdatePeople
@@ -38,12 +40,10 @@ class Application(object):
         people = MyContacts()
 
     def updateContacts(self):
-        pass
-        # updatePeople = UpdatePeople()
+        updatePeople = UpdatePeople()
 
     def aboutUs(self):
-        pass
-
+        about = AboutUs()
 
 def main():
     root = Tk()

@@ -10,8 +10,6 @@ class UpdatePeople(Toplevel):
     def __init__(self, person_id):
         Toplevel.__init__(self)
 
-
-
         # window to update
         self.geometry("650x650+600+200")
         self.title("Update Person")
@@ -92,7 +90,8 @@ class UpdatePeople(Toplevel):
         phone = self.entry_phone_number.get()
         address = self.entry_address.get(1.0, "end-1c")
         query = "UPDATE contacts set person_name = '{}', person_surname = '{}', person_email = '{}', person_phone = " \
-                "'{}', person_address = '{}' where person_id = '{}'".format(name, surname, email, phone, address, person_id)
+                "'{}', person_address = '{}' where person_id = '{}'".format(name, surname, email, phone, address,
+                                                                            person_id)
         try:
             cursor.execute(query)
             conn.commit()
